@@ -51,13 +51,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "bootstrap5",
+    "django_bootstrap5",
     "location_field.apps.DefaultConfig",
     "columns",
     "cloudinary",
     "tinymce",
     "crispy_forms",
-    "bootstrap4",
+    "django_bootstrap4",
     "rest_framework",
     "rest_framework.authtoken",
     "vote",
@@ -70,7 +70,7 @@ REST_FRAMEWORK = {
     )
 }
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "django_bootstrap4"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
