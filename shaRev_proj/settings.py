@@ -57,7 +57,7 @@ INSTALLED_APPS = [
     "cloudinary",
     "tinymce",
     "crispy_forms",
-    "django_bootstrap4",
+    "bootstrap4",
     "rest_framework",
     "rest_framework.authtoken",
     "vote",
@@ -70,7 +70,7 @@ REST_FRAMEWORK = {
     )
 }
 
-CRISPY_TEMPLATE_PACK = "django_bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
