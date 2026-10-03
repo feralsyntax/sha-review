@@ -1,5 +1,5 @@
 from django.contrib import admin
-from review.models import Project,vote
+from review_app.models import Project,vote
 
 # Register your models here.
 admin.site.site_header = 'shaReview Admin'

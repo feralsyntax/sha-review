@@ -1,4 +1,4 @@
-"""shaRev URL Configuration
+"""shaRev_proj URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -20,7 +20,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('review.urls')),
+    path('',include('review_app.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('django_registration.backends.one_step.urls')),
     path('accounts/profile/', auth_views.LoginView.as_view(template_name='registration/login_success.html')),

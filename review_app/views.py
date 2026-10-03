@@ -4,13 +4,13 @@ from django.shortcuts import render,redirect,get_object_or_404
 from django.http import HttpResponse,Http404,HttpResponseRedirect
 import datetime as dt
 from django.template import RequestContext
-from review.forms import ProjectForm,ProfileForm,BioForm,ContactForm,VoteForm
-from review.models import Profile,Project,Contact,vote
+from review_app.forms import ProjectForm,ProfileForm,BioForm,ContactForm,VoteForm
+from review_app.models import Profile,Project,Contact,vote
 from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from review.serializer import ProjectSerializer,ProfileSerializer
-from review.permissions import IsAdminOrReadOnly,IsAuthenticatedOrReadOnly
+from review_app.serializer import ProjectSerializer,ProfileSerializer
+from review_app.permissions import IsAdminOrReadOnly,IsAuthenticatedOrReadOnly
 from django.urls import reverse
 from django.db.models import Sum,Count,Avg
 
